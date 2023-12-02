@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        {% for u in circuito %}
+        <li>
+            {{u.nome_circuito}} - 
+            {{u.distancia_volta}} - 
+            {{u.pais}} - 
+            {{u.num_voltas}} - 
+            {{u.categoria}} - 
+            {{u.id}} - 
+            <a href="/circuito/update/{{u.id}}">editar</a>
+            <a href="/circuito/delete/{{u.id}}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

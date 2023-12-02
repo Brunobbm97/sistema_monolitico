@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method='post' action="/update/{{u.id}}">
+        Nome: <input type="text" name="nome" value="{{u.nome}}"><br>
+        Tipo do Veiculo <input type="text" name="tipo_veiculo" value="{{u.tipo_veiculo}}"><br>
+        Veiculo <input type="text" name="veiculo" value="{{u.veiculo}}"><br>
+        <input type="submit" value="Atualizar">
+    </form>
+</body>
+</html>
